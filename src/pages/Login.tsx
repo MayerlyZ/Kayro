@@ -57,7 +57,7 @@ export default function Login() {
         <div className="text-center space-y-4">
           <div className="flex items-center justify-center space-x-3">
             <div className="p-3 rounded-full" style={{background: 'linear-gradient(135deg, #02735E 0%, #0CF25D 100%)'}}>
-                <img src="src/img/RiwiFit-removebg-preview.png" alt="RiwiFit Logo" className="h-25 w-30 object-contain" width="100px" />
+                <img src="./src/img/RiwiFit-removebg-preview.png" alt="RiwiFit Logo" className="h-25 w-30 object-contain" width="100px" />
             </div>
           </div>
             <h1 className="text-3xl font-bold" style={{color: '#034155'}}>RiwiFit</h1>
