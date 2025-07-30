@@ -56,22 +56,22 @@ export default function Login() {
         {/* Logo y título */}
         <div className="text-center space-y-4">
           <div className="flex items-center justify-center space-x-3">
-            <div className="p-3 rounded-full" style={{background: 'linear-gradient(135deg, #02735E 0%, #0CF25D 100%)'}}>
-                <img src="/./src/img/RiwiFit-removebg-preview.png" alt="RiwiFit Logo" className="h-25 w-30 object-contain" width="100px" />
+            <div className="p-3 rounded-full">
+                <img src="/./src/img/logo.png" alt="Kayro Logo" className="h-25 w-30 object-contain" width="200px" />
             </div>
           </div>
-            <h1 className="text-3xl font-bold" style={{color: '#034155'}}>RiwiFit</h1>
-          <p className="text-lg" style={{color: '#025951'}}>
-            Inicia sesión en tu cuenta
-          </p>
+        
         </div>
 
         {/* Formulario de login */}
-        <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
+        <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg" style={{marginTop:'-40px'}}>
           <CardHeader className="text-center pb-6">
             <CardTitle className="text-2xl" style={{color: '#034155'}}>
               Bienvenido de vuelta
-            </CardTitle>
+            </CardTitle><br />  
+            <p className="text-lg" style={{color: '#0D0D0D'}}>
+            Inicia sesión en tu cuenta
+          </p><br />
           </CardHeader>
           
           <CardContent>
@@ -85,11 +85,11 @@ export default function Login() {
               )}
 
               <div className="space-y-2">
-                <Label htmlFor="email" style={{color: '#034155'}}>
+                <Label htmlFor="email" style={{color: '#0D0D0D'}}>
                   Correo electrónico
                 </Label>
                 <div className="relative">
-                  <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4" style={{color: '#025951'}} />
+                  <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4" style={{color: '#0D0D0D'}} />
                   <Input
                     id="email"
                     name="email"
@@ -104,11 +104,11 @@ export default function Login() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="password" style={{color: '#034155'}}>
+                <Label htmlFor="password" style={{color: '#0D0D0D'}}>
                   Contraseña
                 </Label>
                 <div className="relative">
-                  <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4" style={{color: '#025951'}} />
+                  <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4" style={{color: '#0D0D0D'}} />
                   <Input
                     id="password"
                     name="password"
@@ -125,9 +125,9 @@ export default function Login() {
                     className="absolute right-3 top-1/2 transform -translate-y-1/2"
                   >
                     {showPassword ? (
-                      <EyeOff className="h-4 w-4" style={{color: '#025951'}} />
+                      <EyeOff className="h-4 w-4" style={{color: '#0D0D0D'}} />
                     ) : (
-                      <Eye className="h-4 w-4" style={{color: '#025951'}} />
+                      <Eye className="h-4 w-4" style={{color: '#0D0D0D'}} />
                     )}
                   </button>
                 </div>
@@ -139,14 +139,14 @@ export default function Login() {
                     type="checkbox"
                     className="rounded border-green-300 text-green-600 focus:ring-green-500"
                   />
-                  <span className="text-sm" style={{color: '#025951'}}>
+                  <span className="text-sm" style={{color: '#0D0D0D'}}>
                     Recordarme
                   </span>
                 </label>
                 <Link
                   to="/forgot-password"
                   className="text-sm hover:underline"
-                  style={{color: '#038C3E'}}
+                  style={{color: '#0D0D0D'}}
                 >
                   ¿Olvidaste tu contraseña?
                 </Link>
@@ -155,7 +155,7 @@ export default function Login() {
               <Button
                 type="submit"
                 className="w-full text-white font-medium py-3 rounded-lg transition-all duration-300 hover:shadow-glow"
-                style={{background: 'linear-gradient(135deg, #02735E 0%, #0CF25D 100%)'}}
+                style={{background: 'linear-gradient(135deg,rgba(251, 44, 252, 1) 0%,rgb(110, 74, 207),rgba(0, 144, 253, 1) 100%)'}}
                 disabled={isLoading}
               >
                 {isLoading ? "Iniciando sesión..." : "Iniciar Sesión"}
@@ -163,12 +163,12 @@ export default function Login() {
             </form>
 
             <div className="mt-6 text-center">
-              <p className="text-sm" style={{color: '#025951'}}>
+              <p className="text-sm" style={{color: '#0D0D0D'}}>
                 ¿No tienes una cuenta?{" "}
                 <Link
                   to="/register"
                   className="font-medium hover:underline"
-                  style={{color: '#038C3E'}}
+                  style={{color: '# 0D0D0D'}}
                 >
                   Regístrate aquí
                 </Link>
@@ -177,9 +177,9 @@ export default function Login() {
 
             {/* Línea divisoria */}
             <div className="my-6 flex items-center">
-              <div className="flex-1 h-px bg-green-200"></div>
-              <span className="px-4 text-sm" style={{color: '#025951'}}>o</span>
-              <div className="flex-1 h-px bg-green-200"></div>
+              <div className="flex-1 h-px bg-blue-200"></div>
+              <span className="px-4 text-sm" style={{color: '#0D0D0D'}}>o</span>
+              <div className="flex-1 h-px bg-blue-200"></div>
             </div>
 
             {/* Botones de redes sociales */}
@@ -187,7 +187,7 @@ export default function Login() {
               <Button
                 type="button"
                 variant="outline"
-                className="w-full border-green-200 hover:bg-green-50"
+                className="w-full border-black-200 hover:bg-black-50"
                 onClick={() => setError("Funcionalidad próximamente")}
               >
                 <svg className="h-5 w-5 mr-2" viewBox="0 0 24 24">
@@ -202,7 +202,7 @@ export default function Login() {
               <Button
                 type="button"
                 variant="outline"
-                className="w-full border-green-200 hover:bg-green-50"
+                className="w-full border-black-200 hover:bg-blue-50"
                 onClick={() => setError("Funcionalidad próximamente")}
               >
                 <svg className="h-5 w-5 mr-2" fill="#1877F2" viewBox="0 0 24 24">
@@ -215,13 +215,13 @@ export default function Login() {
         </Card>
 
         {/* Footer */}
-        <div className="text-center text-sm" style={{color: '#025951'}}>
+        <div className="text-center text-sm" style={{color: '#0D0D0D'}}>
           Al iniciar sesión, aceptas nuestros{" "}
-          <Link to="/terms" className="hover:underline" style={{color: '#038C3E'}}>
+          <Link to="/terms" className="hover:underline" style={{color: '#0D0D0D'}}>
             Términos de Servicio
           </Link>
           {" "}y{" "}
-          <Link to="/privacy" className="hover:underline" style={{color: '#038C3E'}}>
+          <Link to="/privacy" className="hover:underline" style={{color: '#0D0D0D'}}>
             Política de Privacidad
           </Link>
         </div>
