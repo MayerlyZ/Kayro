@@ -95,12 +95,11 @@ export default function Register() {
         {/* Logo y título */}
         <div className="text-center space-y-4">
           <div className="flex items-center justify-center space-x-3">
-            <div className="p-3 rounded-full" style={{background: 'linear-gradient(135deg, #02735E 0%, #0CF25D 100%)'}}>
-              <Dumbbell className="h-8 w-8 text-white" />
+            <div className="p-3 rounded-full">
             </div>
-            <h1 className="text-3xl font-bold" style={{color: '#034155'}}>RiwiFit</h1>
+            <img src="./src/img/logo.png" style={{width:'150px'}}></img><br />
           </div>
-          <p className="text-lg" style={{color: '#025951'}}>
+          <p className="text-lg" style={{color: '#000000', marginTop:'-50px'}}>
             Crea tu cuenta y comienza tu viaje fitness
           </p>
         </div>
@@ -109,7 +108,7 @@ export default function Register() {
         <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg">
           <CardHeader className="text-center pb-6">
             <CardTitle className="text-2xl" style={{color: '#034155'}}>
-              Únete a RiwiFit
+              Únete a Kayro
             </CardTitle>
           </CardHeader>
           
@@ -126,11 +125,11 @@ export default function Register() {
               {/* Nombre y apellido */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="firstName" style={{color: '#034155'}}>
+                  <Label htmlFor="firstName" style={{color: '#0D0D0D'}}>
                     Nombre
                   </Label>
                   <div className="relative">
-                    <User className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4" style={{color: '#025951'}} />
+                    <User className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4" style={{color: '#0D0D0D'}} />
                     <Input
                       id="firstName"
                       name="firstName"
@@ -138,14 +137,14 @@ export default function Register() {
                       value={formData.firstName}
                       onChange={handleChange}
                       placeholder="Juan"
-                      className="pl-10 border-green-200 focus:border-green-500 focus:ring-green-500"
+                      className="pl-10 border-blue-200 focus:border-blue-500 focus:ring-blue-500"
                       required
                     />
                   </div>
                 </div>
                 
                 <div className="space-y-2">
-                  <Label htmlFor="lastName" style={{color: '#034155'}}>
+                  <Label htmlFor="lastName" style={{color: '#0D0D0D'}}>
                     Apellido
                   </Label>
                   <Input
@@ -155,7 +154,7 @@ export default function Register() {
                     value={formData.lastName}
                     onChange={handleChange}
                     placeholder="Pérez"
-                    className="border-green-200 focus:border-green-500 focus:ring-green-500"
+                    className="border-blue-200 focus:border-blue-500 focus:ring-blue-500"
                     required
                   />
                 </div>
@@ -163,11 +162,11 @@ export default function Register() {
 
               {/* Email */}
               <div className="space-y-2">
-                <Label htmlFor="email" style={{color: '#034155'}}>
+                <Label htmlFor="email" style={{color: '#0D0D0D'}}>
                   Correo electrónico
                 </Label>
                 <div className="relative">
-                  <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4" style={{color: '#025951'}} />
+                  <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4" style={{color: '#0D0D0D'}} />
                   <Input
                     id="email"
                     name="email"
@@ -175,7 +174,7 @@ export default function Register() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="tu@email.com"
-                    className="pl-10 border-green-200 focus:border-green-500 focus:ring-green-500"
+                    className="pl-10 border-blue-200 focus:border-blue-500 focus:ring-blue-500"
                     required
                   />
                 </div>
@@ -183,11 +182,11 @@ export default function Register() {
 
               {/* Teléfono */}
               <div className="space-y-2">
-                <Label htmlFor="phone" style={{color: '#034155'}}>
+                <Label htmlFor="phone" style={{color: '#0D0D0D'}}>
                   Teléfono (opcional)
                 </Label>
                 <div className="relative">
-                  <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4" style={{color: '#025951'}} />
+                  <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4" style={{color: '#0D0D0D'}} />
                   <Input
                     id="phone"
                     name="phone"
@@ -195,18 +194,18 @@ export default function Register() {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="+57 300 123 4567"
-                    className="pl-10 border-green-200 focus:border-green-500 focus:ring-green-500"
+                    className="pl-10 border-blue-200 focus:border-blue-500 focus:ring-blue-500"
                   />
                 </div>
               </div>
 
               {/* Contraseña */}
               <div className="space-y-2">
-                <Label htmlFor="password" style={{color: '#034155'}}>
+                <Label htmlFor="password" style={{color: '#0D0D0D'}}>
                   Contraseña
                 </Label>
                 <div className="relative">
-                  <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4" style={{color: '#025951'}} />
+                  <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4" style={{color: '#0D0D0D'}} />
                   <Input
                     id="password"
                     name="password"
@@ -214,7 +213,7 @@ export default function Register() {
                     value={formData.password}
                     onChange={handleChange}
                     placeholder="••••••••"
-                    className="pl-10 pr-10 border-green-200 focus:border-green-500 focus:ring-green-500"
+                    className="pl-10 pr-10 border-blue-200 focus:border-blue-500 focus:ring-blue-500"
                     required
                   />
                   <button
@@ -223,9 +222,9 @@ export default function Register() {
                     className="absolute right-3 top-1/2 transform -translate-y-1/2"
                   >
                     {showPassword ? (
-                      <EyeOff className="h-4 w-4" style={{color: '#025951'}} />
+                      <EyeOff className="h-4 w-4" style={{color: '#0D0D0D1'}} />
                     ) : (
-                      <Eye className="h-4 w-4" style={{color: '#025951'}} />
+                      <Eye className="h-4 w-4" style={{color: '#0D0D0D'}} />
                     )}
                   </button>
                 </div>
@@ -235,7 +234,7 @@ export default function Register() {
                   <div className="space-y-2">
                     <Progress value={(passwordStrength / 5) * 100} className="h-2" />
                     <p className="text-xs flex items-center space-x-2">
-                      <span style={{color: '#025951'}}>Fortaleza:</span>
+                      <span style={{color: '#0D0D0D'}}>Fortaleza:</span>
                       <span className={`font-medium ${passwordStrength >= 3 ? 'text-green-600' : 'text-red-600'}`}>
                         {strengthLabels[passwordStrength] || ""}
                       </span>
@@ -246,11 +245,11 @@ export default function Register() {
 
               {/* Confirmar contraseña */}
               <div className="space-y-2">
-                <Label htmlFor="confirmPassword" style={{color: '#034155'}}>
+                <Label htmlFor="confirmPassword" style={{color: '#0D0D0D'}}>
                   Confirmar contraseña
                 </Label>
                 <div className="relative">
-                  <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4" style={{color: '#025951'}} />
+                  <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4" style={{color: '#0D0D0D'}} />
                   <Input
                     id="confirmPassword"
                     name="confirmPassword"
@@ -258,7 +257,7 @@ export default function Register() {
                     value={formData.confirmPassword}
                     onChange={handleChange}
                     placeholder="••••••••"
-                    className="pl-10 pr-10 border-green-200 focus:border-green-500 focus:ring-green-500"
+                    className="pl-10 pr-10 border-blue-200 focus:border-blue-500 focus:ring-blue-500"
                     required
                   />
                   <button
@@ -267,9 +266,9 @@ export default function Register() {
                     className="absolute right-3 top-1/2 transform -translate-y-1/2"
                   >
                     {showConfirmPassword ? (
-                      <EyeOff className="h-4 w-4" style={{color: '#025951'}} />
+                      <EyeOff className="h-4 w-4" style={{color: '#0D0D0D'}} />
                     ) : (
-                      <Eye className="h-4 w-4" style={{color: '#025951'}} />
+                      <Eye className="h-4 w-4" style={{color: '#0D0D0D'}} />
                     )}
                   </button>
                 </div>
@@ -288,13 +287,13 @@ export default function Register() {
                   className="mt-1 rounded border-green-300 text-green-600 focus:ring-green-500"
                   required
                 />
-                <label htmlFor="acceptTerms" className="text-sm" style={{color: '#025951'}}>
+                <label htmlFor="acceptTerms" className="text-sm" style={{color: '#000000'}}>
                   Acepto los{" "}
-                  <Link to="/terms" className="hover:underline" style={{color: '#038C3E'}}>
+                  <Link to="/terms" className="hover:underline" style={{color: '#000000'}}>
                     Términos de Servicio
                   </Link>
                   {" "}y la{" "}
-                  <Link to="/privacy" className="hover:underline" style={{color: '#038C3E'}}>
+                  <Link to="/privacy" className="hover:underline" style={{color: '#000000'}}>
                     Política de Privacidad
                   </Link>
                 </label>
@@ -303,7 +302,7 @@ export default function Register() {
               <Button
                 type="submit"
                 className="w-full text-white font-medium py-3 rounded-lg transition-all duration-300 hover:shadow-glow"
-                style={{background: 'linear-gradient(135deg, #02735E 0%, #0CF25D 100%)'}}
+                style={{background: 'linear-gradient(135deg,rgb(46, 142, 197) 0%,rgb(101, 63, 161) 100%)'}}
                 disabled={isLoading || !acceptTerms}
               >
                 {isLoading ? "Creando cuenta..." : "Crear Cuenta"}
@@ -311,12 +310,12 @@ export default function Register() {
             </form>
 
             <div className="mt-6 text-center">
-              <p className="text-sm" style={{color: '#025951'}}>
+              <p className="text-sm" style={{color: '#000000'}}>
                 ¿Ya tienes una cuenta?{" "}
                 <Link
                   to="/login"
                   className="font-medium hover:underline"
-                  style={{color: '#038C3E'}}
+                  style={{color: '#000000'}}
                 >
                   Inicia sesión aquí
                 </Link>

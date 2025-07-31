@@ -66,10 +66,10 @@ export default function Login() {
         {/* Formulario de login */}
         <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg" style={{marginTop:'-40px'}}>
           <CardHeader className="text-center pb-6">
-            <CardTitle className="text-2xl" style={{color: '#034155'}}>
+            <CardTitle className="text-2xl" style={{color: '#000000'}}>
               Bienvenido de vuelta
             </CardTitle><br />  
-            <p className="text-lg" style={{color: '#0D0D0D'}}>
+            <p className="text-lg" style={{color: '#000000'}}>
             Inicia sesión en tu cuenta
           </p><br />
           </CardHeader>
@@ -97,7 +97,7 @@ export default function Login() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="tu@email.com"
-                    className="pl-10 border-green-200 focus:border-green-500 focus:ring-green-500"
+                    className="pl-10 border-blue-200 focus:border-blue-500 focus:ring-blue-500"
                     required
                   />
                 </div>
@@ -116,7 +116,7 @@ export default function Login() {
                     value={formData.password}
                     onChange={handleChange}
                     placeholder="••••••••"
-                    className="pl-10 pr-10 border-green-200 focus:border-green-500 focus:ring-green-500"
+                    className="pl-10 pr-10 border-blue-200 focus:border-blue-500 focus:ring-blue-500"
                     required
                   />
                   <button

@@ -12,7 +12,7 @@ export default function Landing() {
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4">
-              Bienvenido a <span className="text-primary"  style={{ color: "#0cf25d" }}  >RiwiFit</span>
+              Bienvenido a <span className="text-primary"  style={{ color: "#0cf25d" }}  >Kayro</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Tu compañero perfecto para alcanzar tus objetivos de fitness. 
@@ -68,7 +68,7 @@ export default function Landing() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              ¿Por qué elegir RiwiFit?
+              ¿Por qué elegir KAYRO?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Ofrecemos todas las herramientas que necesitas para transformar tu estilo de vida
@@ -224,7 +224,7 @@ export default function Landing() {
             ¿Listo para comenzar tu transformación?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Únete a miles de usuarios que ya están alcanzando sus objetivos con RiwiFit
+            Únete a miles de usuarios que ya están alcanzando sus objetivos con Kayro
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button

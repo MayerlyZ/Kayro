@@ -46,7 +46,7 @@ export function Navigation() {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <span className="text-xl font-bold" style={{color: '#02735E'}}>
-              RiwiFit
+              Kayro
             </span>
           </div>
 

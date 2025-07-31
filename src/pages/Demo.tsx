@@ -14,7 +14,7 @@ export default function Demo() {
             <div className="p-3 rounded-full" style={{background: 'linear-gradient(135deg, #02735E 0%, #0CF25D 100%)'}}>
               <Dumbbell className="h-8 w-8 text-white" />
             </div>
-            <h1 className="text-4xl font-bold" style={{color: '#034155'}}>RiwiFit</h1>
+            <h1 className="text-4xl font-bold" style={{color: '#034155'}}>Kayro</h1>
           </div>
           <p className="text-xl" style={{color: '#025951'}}>
             Tu aplicación completa de fitness y bienestar
@@ -66,7 +66,7 @@ export default function Demo() {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-center" style={{color: '#025951'}}>
-                Regístrate y únete a RiwiFit
+                Regístrate y únete a Kayro
               </p>
               <div className="space-y-2 text-sm" style={{color: '#025951'}}>
                 <p>✅ Validación de contraseña</p>
