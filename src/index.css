@@ -8,117 +8,108 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Light neutral color palette */
-    --background: 0 0% 98%;
-    --foreground: 0 0% 15%;
+    --card: 0 0% 98%;  /* Color de fondo de las tarjetas */
+    --card-foreground: 0 0% 10%;  /* Texto oscuro para las tarjetas */
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 15%;
+    --popover: 0 0% 98%;  /* Fondo suave para popovers */
+    --popover-foreground: 0 0% 15%;  /* Texto oscuro para popovers */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 15%;
+    /* Primary: Rosa fuerte cambiado por gris oscuro */
+    --primary: 210 10% 75%;              /* Gris oscuro para elementos destacados */
+    --primary-foreground: 0 0% 98%;     /* Blanco claro para el texto en los botones */
 
-    /* Primary: Verde medio-oscuro */
-    --primary: 174 100% 23%;
-    --primary-foreground: 0 0% 98%;
+    /* Secondary: Morado suave */
+    --secondary: 240 85% 60%;            /* #5E61F4 */
+    --secondary-foreground: 0 0% 98%;   /* Blanco para el texto en botones secundarios */
 
-    /* Secondary: Verde muy claro */
-    --secondary: 220 10% 92%;
-    --secondary-foreground: 174 100% 15%;
+    /* Muted: Azul claro */
+    --muted: 210 90% 65%;                /* #4B8BFD */
+    --muted-foreground: 0 0% 10%;        /* Texto oscuro para áreas con azul claro */
 
-    --muted: 220 10% 95%;
-    --muted-foreground: 174 50% 35%;
+    /* Accent: Azul claro suave */
+    --accent: 210 85% 70%;               /* Azul claro más suave */
+    --accent-foreground: 0 0% 10%;       /* Texto oscuro para los acentos */
 
-    /* Accent: Verde claro */
-    --accent: 174 50% 85%;
-    --accent-foreground: 174 100% 15%;
+    /* Destructive: Rojo (eliminado de la paleta verde) */
+    --destructive: 0 65% 55%;            /* Rojo para alertas destructivas */
+    --destructive-foreground: 0 0% 98%;  /* Blanco para texto en alertas destructivas */
 
-    --destructive: 0 65% 55%;
-    --destructive-foreground: 0 0% 98%;
+    /* Border and input areas */
+    --border: 240 85% 70%; /* Morado suave para bordes */
+    --input: 240 85% 90%;  /* Fondo suave de entrada */
+    --ring: 210 10% 35%;   /* Gris oscuro para anillos de enfoque */
 
-    --border: 220 10% 90%;
-    --input: 220 10% 95%;
-    --ring: 174 100% 23%;
-
-    /* Custom gym colors using the green palette */
-    --energy: 135 96% 55%;        /* Verde claro/lima #0CF25D */
-    --power: 151 91% 27%;         /* Verde medio #038C3E */
-    --strength: 174 100% 23%;     /* Verde medio-oscuro #02735E */
-    --endurance: 174 100% 17%;    /* Verde oscuro #025951 */
-    --focus: 174 100% 13%;        /* Verde muy oscuro #034155 */
-    --recovery: 135 96% 70%;      /* Verde claro suave */
-    
+    /* Custom gym colors (adaptados a la nueva paleta) */
+    --energy: 200 96% 55%;        
+    --power: 151 91% 27%;         
+    --strength: 174 100% 23%;     
+    --endurance: 174 100% 17%;    
+    --focus: 174 100% 13%;        
+    --recovery: 135 96% 70%;      
     
     /* Shadows with green effect */
-    --shadow-glow: 0 2px 10px hsl(var(--primary) / 0.2);
-    --shadow-intense: 0 4px 20px hsl(var(--energy) / 0.25);
-    --shadow-soft: 0 1px 3px hsl(0 0% 0% / 0.1);
+   --shadow-glow: 0 2px 10px hsl(318 75% 43% / 0.2); /* Rosa fuerte (HSL de #9B1D92) */
+    --shadow-intense: 0 4px 20px hsl(227 77% 60% / 0.25); /* Morado suave (HSL de #5E61F4) */
+    --shadow-soft: 0 1px 3px hsl(214 91% 70% / 0.1); /* Azul claro (HSL de #4B8BFD) */
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-foreground: 318 60% 30%; /* Rosa fuerte suave (para texto primario) */
+    --sidebar-primary: 227 77% 45%; /* Morado suave (para fondo primario) */
+    --sidebar-primary-foreground: 0 0% 98%; /* Blanco (para texto en el fondo primario) */
+    --sidebar-accent: 214 91% 75%; /* Azul claro suave (para acentos) */
+    --sidebar-accent-foreground: 227 77% 35%; /* Morado más oscuro (para acentos de texto) */
+    --sidebar-border: 227 40% 85%; /* Morado claro (para borde) */
+    --sidebar-ring: 214 100% 70%; /* Azul brillante (para anillo o foco) */
   }
 
   /* Custom gradient backgrounds using the green palette */
-  .bg-gradient-primary {
-    background: linear-gradient(135deg, #02735E 0%, #038C3E 50%, #0CF25D 100%);
-  }
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #9B1D92 0%, #5E61F4 50%, #4B8BFD 100%);
+}
 
-  .bg-gradient-energy {
-    background: linear-gradient(135deg, #038C3E 0%, #0CF25D 100%);
-  }
+.bg-gradient-energy {
+    background: linear-gradient(135deg, #9B1D92 0%, #5E61F4 100%);
+}
 
-  .bg-gradient-strength {
-    background: linear-gradient(135deg, #034155 0%, #02735E 100%);
-  }
+.bg-gradient-strength {
+    background: linear-gradient(135deg, #8B1B9E 0%, #4B8BFD 100%);
+}
 
-  .bg-gradient-wellness {
-    background: linear-gradient(135deg, #025951 0%, #038C3E 100%);
-  }
+.bg-gradient-wellness {
+    background: linear-gradient(135deg, #7C1BAE 0%, #5E61F4 100%);
+}
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+   --background: 328 74.5% 38.4%;  /* Rosa fuerte ajustado */
+    --foreground: 220 100% 95%;      /* Morado suave más claro */
+    --card: 328 74.5% 38.4%;        /* Rosa fuerte ajustado */
+    --card-foreground: 220 100% 95%; /* Morado suave más claro */
+    --popover: 328 74.5% 38.4%;     /* Rosa fuerte ajustado */
+    --popover-foreground: 220 100% 95%; /* Morado suave más claro */
+    --primary: 210 40% 98%;         /* Azul claro */
+    --primary-foreground: 328 47.4% 11.2%; /* Rosa fuerte oscuro */
+    --secondary: 215 68.6% 47.8%;   /* Morado suave ajustado */
+    --secondary-foreground: 210 40% 98%; /* Azul claro */
+    --muted: 215 68.6% 47.8%;       /* Morado suave ajustado */
+    --muted-foreground: 210 40% 98%; /* Azul claro */
+    --accent: 210 40% 98%;          /* Azul claro */
+    --accent-foreground: 328 47.4% 11.2%; /* Rosa fuerte oscuro */
+    --destructive: 0 62.8% 30.6%;   /* El destructivo podría ser un rojo cálido */
+    --destructive-foreground: 210 40% 98%; /* Azul claro */
+    --border: 215 68.6% 47.8%;      /* Morado suave ajustado */
+    --input: 215 68.6% 47.8%;       /* Morado suave ajustado */
+    --ring: 212.7 26.8% 83.9%;      /* Azul más suave */
+    --sidebar-background: 210 40% 98%; /* Azul claro */
+    --sidebar-foreground: 220 100% 95%; /* Morado suave más claro */
+    --sidebar-primary: 210 40% 98%;  /* Azul claro */
+    --sidebar-primary-foreground: 0 0% 100%; /* Blanco */
+    --sidebar-accent: 328 74.5% 38.4%; /* Rosa fuerte ajustado */
+    --sidebar-accent-foreground: 220 100% 95%; /* Morado suave más claro */
+    --sidebar-border: 215 68.6% 47.8%; /* Morado suave ajustado */
+    --sidebar-ring: 210 40% 98%;    /* Azul claro */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
